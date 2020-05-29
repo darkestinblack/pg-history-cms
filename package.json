@@ -1,0 +1,15 @@
+{
+  "name": "pg-history-cms",
+  "version": "1.0.0",
+  "description": "pg history management system",
+  "main": "app.js",
+  "scripts": {
+    "dev": "babel ",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "lazilla",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.10.1"
+  }
+}
