@@ -1,15 +1,32 @@
 {
   "name": "pg-history-cms",
+  "author": "lazilla",
   "version": "1.0.0",
   "description": "pg history management system",
-  "main": "app.js",
+  "private": true,
+  "license": "MIT",
   "scripts": {
-    "dev": "babel ",
+    "dev": "node app.js ",
+    "build:babel": "babel app -d dist",
+    "build:wp": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "lazilla",
-  "license": "MIT",
+  "dependencies": {
+    "@babel/polyfill": "^7.10.1",
+    "babel-loader": "^8.1.0",
+    "lodash": "^4.17.15"
+  },
   "devDependencies": {
-    "@babel/core": "^7.10.1"
+    "@babel/cli": "^7.10.1",
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "@types/lodash": "^4.14.154",
+    "@types/node": "^14.0.6",
+    "@types/webpack": "^4.41.16",
+    "ts-loader": "^7.0.5",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.3",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
   }
 }
